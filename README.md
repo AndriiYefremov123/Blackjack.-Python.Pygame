@@ -1,47 +1,37 @@
-Курсовий проєкт: Гра «Blackjack» на Python з використанням Pygame
-Цей репозиторій містить курсову роботу, присвячену розробці гри «Blackjack» з графічним інтерфейсом за допомогою бібліотеки Pygame. Проєкт демонструє застосування об'єктно-орієнтованого програмування, анімацій, обробки подій та базових алгоритмів гри.
+# Blackjack (Python + Pygame)
 
-Структура проєкту
-blackjack_pygame.py — головний файл, що запускає гру.
+A graphical Blackjack card game built as a course project, implemented in
+Python with Pygame. The project covers full game logic, card dealing and
+animation, sound effects, and automated tests for the core rules.
 
-blackjack_deck.py — логіка створення та управління колодою карт.
+## Tech Stack
+Python 3.8+ · Pygame
 
-card_animation.py — анімація руху карт.
+## Features
+- Full deck creation, shuffling, and dealing logic (`blackjack_deck.py`)
+- Card movement animations (`card_animation.py`)
+- Score counting and win/loss determination
+- Sound effects for player actions (card flip, deal)
+- Automated tests for game rules (`test_blackjack.py`)
 
-constants.py — глобальні константи (кольори, розміри, шрифти).
+## Project Structure
+```
+├── blackjack_pygame.py   # Entry point — runs the game
+├── blackjack_deck.py      # Deck creation & management
+├── card_animation.py       # Card movement animation
+├── constants.py            # Colors, sizes, fonts
+├── img/                     # Card and background images
+├── sounds/                  # Sound effects
+└── test_*.py                # Unit tests
+```
 
-img/ — зображення карт та фонів.
-
-sounds/ — звукові ефекти гри.
-
-test_*.py — тести для перевірки функціональності гри.
-
-Вимоги
-
-Python 3.8+
-Pygame
-
-Як запустити
-Клонуйте репозиторій:
-
-
-git clone https://github.com/AndriiYefremov123/kursach.git
-
-Встановіть залежності:
-
+## Getting Started
+```bash
+git clone https://github.com/AndriiYefremov123/blackjack-pygame.git
+cd blackjack-pygame
 pip install pygame
-
-Запустіть гру:
-
 python blackjack_pygame.py
- 
- Функціональність
-Роздача карт гравцеві та дилеру.
+```
 
-Підрахунок очок та визначення переможця.
-
-Анімація руху карт.
-
-Звукові ефекти для дій гравця.
-
-Тести для перевірки логіки гри.
+## Author
+Andrii Yefremov — Computer Science student, Łódź University of Technology
